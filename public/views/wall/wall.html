@@ -1,0 +1,65 @@
+
+<link rel="stylesheet" href="views/wall/wallStyles.css">
+<link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="views/landing/landingStyles.css" />
+<link rel="stylesheet" href="../../node_modules/animate.css/animate.css">
+<script src="../../node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+<script src='../../views/wall/wallJS.js'></script>
+
+
+<body ng-app="myApp">
+
+
+  <br>
+  <br>
+
+
+  <div class="container" >
+
+  <div class="row">
+      <div class="col-md-5 col-xs-12"><a ui-sref="KittenPuppies">
+
+        <img  src="https://images.unsplash.com/photo-1445499348736-29b6cdfc03b9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0c98225393f792b7b58e4fe2d3fe1644"</a>
+      <!-- <div class="title"><p>feeling cute</p></div> -->
+      </div>
+
+      <div class="col-md-3 col-xs-12"><a ui-sref="motivation"><img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2312db214bd659f61b0dccf6dd386e6f"</a></div>
+
+      <div class="col-md-4 col-xs-12" ><a ui-sref="movies"><img src="https://static.pexels.com/photos/27726/pexels-photo-27726.jpg"</a></div>
+  </div>
+  <!-- //row1 -->
+
+  <div class="row">
+      <div class="col-md-3 col-xs-12"><a ui-sref="education"><img src="./views/wall/imgs/education.png"</a></div>
+
+      <div class="col-md-4 col-xs-12"><a ui-sref="mormon"><img src="./views/wall/imgs/mormonmessage.jpg"</a></div>
+
+      <div class="col-md-5 col-xs-12"><a ui-sref="sports"><img src="https://images.unsplash.com/photo-1450121394502-4f54dc37e7e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0e56b06b15390d93ba6da90872876a36"</a></div>
+  </div>
+  <!-- //row two -->
+
+  <div class="row">
+      <div class="col-md-8 col-xs-12"><a ui-sref="nature"><img  src="./views/wall/imgs/nature4.jpeg"</a></div>
+
+      <div class="col-md-4 col-xs-12"><a ui-sref="story"><img  src="https://images.unsplash.com/photo-1445888985293-8e1b904061c4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c0fbedb62893dd4f2aebafbf175739e4"</a></div>
+  </div>
+
+  <nav id="topNav" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand page-scroll" href="#first"> {{'Hi! '+user.name+ '!'}} </a>
+          </div>
+      </div>
+  </nav>
+
+
+
+</div>
+<!-- //container -->
+<script src="views/landing/landingJs.js"></script>
+<script src="../../views/wall/wallCtrl.js"></script>
+<script src="../../views/wall/wallService.js"></script>
+
+
+</body>

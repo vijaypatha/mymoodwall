@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>MyMoodWall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="views/landing/landingStyles.css" />
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <!--   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button> -->
+                <a class="navbar-brand page-scroll" href="#first"> MyMoodWall</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#one">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="first">
+
+        <video autoplay loop class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s"  id="video-background">
+            <source src="views/landing/bg/bg2.mp4"type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="name">my mood wall</h1>
+                <h4>Watch YouTube based on your mood</h4>
+                <hr>
+                <p>
+                  Register or LogIn with:
+                </p>
+                <a href="/auth/google" class="btn btn-danger btn-xl" ng-click="login()"><span class="fa fa-google-plus"></span> Google</a>
+
+            </div>
+        </div>
+    </header>
+    <!--scripts loaded here from cdn for performance -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="views/landing/landingJs.js"></script>
+
+
+
+  </body>
+</html>

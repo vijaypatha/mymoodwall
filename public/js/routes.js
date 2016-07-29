@@ -1,0 +1,57 @@
+angular
+.module("myApp")
+.config(function($stateProvider,$urlRouterProvider){
+  $urlRouterProvider.otherwise('/');
+  $stateProvider
+  .state('home',{
+    url:'/',
+    templateUrl:'../views/landing/landing.html',
+  })
+  .state('moodwall',{
+    url:'/moodwall/:id',
+    templateUrl:'../views/wall/wall.html',
+    controller:'wallCtrl'
+  })
+  .state('KittenPuppies',{
+    url:'/cute',
+    templateUrl:'../views/puppies/puppiesTempl.html',
+    controller:'puppiesCtrl'
+  })
+  .state('motivation',{
+    url:'/motivation',
+    templateUrl:'../views/motivation/motivationTempl.html',
+    controller:'motivationCtrl'
+  })
+  .state('movies',{
+    url:'/movies',
+    templateUrl:'../views/movies/moviesTempl.html',
+    controller:'moviesCtrl'
+  })
+  .state('nature',{
+    url:'/nature',
+    templateUrl:'../views/nature/natureTempl.html',
+    controller:'natureCtrl'
+  })
+  .state('sports',{
+    url:'/sports',
+    templateUrl:'../views/sports/sportsTempl.html',
+    controller:'sportsCtrl'
+  })
+  .state('education',{
+    url:'/education',
+    templateUrl:'../views/ted/tedTempl.html',
+    controller:'tedCtrl'
+  })
+  .state('mormon',{
+    url:'/mormon',
+    templateUrl:'../views/mormon/mormonTempl.html',
+    controller:'mormonCtrl'
+  })
+  .state('story',{
+    url:'/story',
+    templateUrl:'../views/story/storyTempl.html',
+    controller:'storyCtrl'
+  })
+  
+
+});
